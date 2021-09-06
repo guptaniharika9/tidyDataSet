@@ -28,13 +28,13 @@ x_data (10299 rows, 561 columns) is created by merging x_train and x_test using 
 y_data (10299 rows, 1 column) is created by merging y_train and y_test using rbind() function
 data (10299 rows, 563 column) is created by merging subject_data, y_data and x_data using cbind() function
 
-2. Extract measurements on the mean and standard deviation for each measurement
+2. Extract measurements on the mean and standard deviation for each measurement:
 tidy_data (10299 rows, 88 columns) is created by subsetting data, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement
 
-3. Use descriptive activity names
+3. Use descriptive activity names:
 Numbers in code column of the tidy_Data are replaced with corresponding activity taken from second column of the activities variable
 
-4. Label the data set with descriptive variable names
+4. Label the data set with descriptive variable names:
 a) code column in tidy_data is renamed into activities
 b) All Acc in column’s name replaced by Accelerometer
 c) All Gyro in column’s name replaced by Gyroscope
@@ -43,7 +43,7 @@ e) All Mag in column’s name replaced by Magnitude
 f) All start with character f in column’s name replaced by Frequency
 g) All start with character t in column’s name replaced by Time
 
-5. Create a new independent tidy data set with the average of each variable for each activity and each subject
+5. Create a new independent tidy data set with the average of each variable for each activity and each subject:
 prepared_data (180 rows, 88 columns) is created by sumarizing tidy_data taking the means of each variable for each activity and each subject, after groupped by subject and activity.
 
 Export prepared_data into data.txt file.
