@@ -32,7 +32,7 @@ data (10299 rows, 563 column) is created by merging subject_data, y_data and x_d
 tidy_data (10299 rows, 88 columns) is created by subsetting data, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement
 
 3. Use descriptive activity names:
-Numbers in code column of the tidy_Data are replaced with corresponding activity taken from second column of the activities variable
+Numbers in code column of the tidy_data are replaced with corresponding activity taken from second column of the activities variable
 
 4. Label the data set with descriptive variable names:
 a) code column in tidy_data is renamed into activities
